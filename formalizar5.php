@@ -5,7 +5,7 @@
             //si se ha marcado la casilla se hace el update:
             //
             //conexion con la base de datos:
-            //$conexion= mysqli_connect("127.0.0.1","root","333ventinueve!","TaxiCorpLCB");
+            
             $conexion= mysqli_connect("localhost","cursoajax","123456","TaxiCorpLCB");
             //aqui hace el insert:
             $insert="INSERT INTO servicio VALUES (";

@@ -18,7 +18,7 @@
                     $html="Veh&iacute;culos libres (disponibles):";
                     echo($html);
                     //conexion con la base de datos:
-                    //$conexion= mysqli_connect("127.0.0.1","root","333ventinueve!","TaxiCorpLCB");
+                   
                     $conexion= mysqli_connect("localhost","cursoajax","123456","TaxiCorpLCB");
                     //mostrar todos los taxis en los que Ocupado sea 0:
                     $sel="SELECT * FROM taxis WHERE Ocupado=0";

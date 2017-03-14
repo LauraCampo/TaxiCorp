@@ -36,7 +36,7 @@
                             <tbody>
                             <tr>
                             <?php
-                            //$conexion= mysqli_connect("127.0.0.1","root","333ventinueve!","TaxiCorpLCB");
+                           
                             $conexion= mysqli_connect("localhost","cursoajax","123456","TaxiCorpLCB");
                             //coger el último número de servicio
                             //si con un fetch array te cogia el ultimo numero de matricula, aqui tiene que valer tb

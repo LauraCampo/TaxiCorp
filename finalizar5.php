@@ -12,7 +12,7 @@
 // una vez se ha enviado el formulario:
 //if(isset($_POST["finalizar"])){
         //conexion con la base de datos:
-            //$conexion= mysqli_connect("127.0.0.1","root","333ventinueve!","TaxiCorpLCB");
+            
             $conexion= mysqli_connect("localhost","cursoajax","123456","TaxiCorpLCB");
             //aqui hace UPDATE del Importe tabla servicio: 
             $update="UPDATE servicio SET "

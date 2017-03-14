@@ -22,7 +22,7 @@
                     $html="Veh&iacute;culos con carrera en curso (ocupados con importe de carrera cero):";
                     echo($html);
                     //conexion con la base de datos:
-                    //$conexion= mysqli_connect("127.0.0.1","root","333ventinueve!","TaxiCorpLCB");
+                    
                     $conexion= mysqli_connect("localhost","cursoajax","123456","TaxiCorpLCB");
                     //Muestra de la tabla servicios el importe 0 :
                     $sel="SELECT * FROM servicio WHERE Importe=0";

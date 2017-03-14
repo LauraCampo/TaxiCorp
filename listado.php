@@ -3,7 +3,7 @@
 $html="Flota de veh&iacute;culos actual:";
 echo($html);
 //conexion con la base de datos:
-//$conexion= mysqli_connect("127.0.0.1","root","333ventinueve!","TaxiCorpLCB");
+
 $conexion= mysqli_connect("localhost","cursoajax","123456","TaxiCorpLCB");
 $sel="SELECT * FROM taxis";
 $exec= mysqli_query($conexion, $sel);

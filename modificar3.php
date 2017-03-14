@@ -25,7 +25,7 @@
                     <option value="" selected="selected">- selecciona -</option>
                     <!-- aqui tiene que hacer un recorrido de las matriculas de la tabla: -->
                     <?php 
-                        //$conexion= mysqli_connect("127.0.0.1","root","333ventinueve!","TaxiCorpLCB");
+                        
                         $conexion= mysqli_connect("localhost","cursoajax","123456","TaxiCorpLCB");
                         $sel="SELECT Matricula FROM taxis";      
                         $exec= mysqli_query($conexion, $sel);
