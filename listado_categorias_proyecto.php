@@ -1,17 +1,17 @@
 <?php header('Content-type: text/html; charset=iso-8859-1');?>
 <?php
-$matricula=$_POST["Matricula"];
-echo($matricula);
+$html="Flota de veh&iacute;culos actual:";
+echo($html);
 //conexion con la base de datos:
-$conexion= mysqli_connect("127.0.0.1","root","localtestdeveloper","TaxiCorpLCB");
-//$conexion= mysqli_connect("localhost","cursoajax","123456","TaxiCorpLCB");
-$sel="SELECT * FROM taxis WHERE Matricula";
+$conexion= mysqli_connect("127.0.0.1","root","333ventinueve!","Adjuntos");
+
+$sel="SELECT * FROM ficheros_adjtuntos";
 $exec= mysqli_query($conexion, $sel);
 ?>
         <table id="flota">
             <thead>
                 <tr>
-                    <th>Matr&iacute;cula</th>
+                    <th>campo_id</th>
                     <th>Modelo</th>
                     <th>Nombre</th>
                     <th>Apellidos</th>
@@ -32,4 +32,6 @@ while($registro= mysqli_fetch_array($exec)){
 <?php } ?>
             </tbody>
         </table>
+
+
 

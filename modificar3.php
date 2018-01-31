@@ -4,16 +4,16 @@
     <head>
         <title>TaxiCorp</title>
         <meta charset="UTF-8">
-        <meta name="description" content="Empresa de taxis">
-        <meta name="author" content="Laura">
-        <meta name="keywords" content="Taxi,Chofer,Servicios">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="estilos.css" type="text/css">
-        <script type="text/javascript" src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+        <!--<script type="text/javascript" src="//code.jquery.com/jquery-3.1.1.min.js"></script>-->
+        <script src="jQuery_3_2_0.js"></script>
         <!-- enlace a los estilos -->
         <link type="text/css" media="screen" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="Stylesheet" />
+        <!--<link type="text/css" href="jquery-ui-1.12.1.custom/jquery-ui.css"/>-->
         <!-- enlace a la versión de jquery ui-->
         <script   src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"   integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="   crossorigin="anonymous"></script>
+        <!--<script src="jquery-ui-1.12.1.custom/jquery-ui.js" />-->
         <script type="text/javascript" src="scripts.js"></script>
     </head>
     <body>
@@ -25,8 +25,8 @@
                     <option value="" selected="selected">- selecciona -</option>
                     <!-- aqui tiene que hacer un recorrido de las matriculas de la tabla: -->
                     <?php 
-                        
-                        $conexion= mysqli_connect("localhost","cursoajax","123456","TaxiCorpLCB");
+                        $conexion= mysqli_connect("127.0.0.1","root","localtestdeveloper","TaxiCorpLCB");
+                        //$conexion= mysqli_connect("localhost","cursoajax","123456","TaxiCorpLCB");
                         $sel="SELECT Matricula FROM taxis";      
                         $exec= mysqli_query($conexion, $sel);
                     

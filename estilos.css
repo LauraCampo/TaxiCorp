@@ -25,7 +25,7 @@ header {
     position: fixed;
     width: 98%;
     top: 1px;
-    display:none; /*para el efecto:*/
+    /*display:none; para el efecto:*/
 }
 #logo_sup {
     width: 200px;

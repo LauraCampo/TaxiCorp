@@ -11,8 +11,8 @@
 <?php
 
 //conexion con la base de datos:
-
-$conexion= mysqli_connect("localhost","cursoajax","123456","TaxiCorpLCB");
+$conexion= mysqli_connect("127.0.0.1","root","localtestdeveloper","TaxiCorpLCB");
+//$conexion= mysqli_connect("localhost","cursoajax","123456","TaxiCorpLCB");
     $resumen = "<table><thead>
                 <tr>
                     <th>Matr&iacute;cula</th>

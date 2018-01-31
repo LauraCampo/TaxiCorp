@@ -12,8 +12,7 @@
     <body>
 <?php
 $dia=$_POST["dia"];
-
-$conexion= mysqli_connect("localhost","cursoajax","123456","TaxiCorpLCB");
+$conexion= mysqli_connect("127.0.0.1","root","localtestdeveloper","TaxiCorpLCB");
 $sel="SELECT * FROM servicio WHERE Dia="."'".$dia."'";
 
 $exec= mysqli_query($conexion, $sel);
@@ -22,9 +21,6 @@ $sel2="SELECT SUM(Importe) AS value_sum FROM servicio WHERE Dia="."'".$dia."'";
 $result = mysqli_query($conexion,$sel2);
 $row = mysqli_fetch_assoc($result);
 $sum = $row['value_sum'];
-//$result = mysql_query('SELECT SUM(value) AS value_sum FROM codes');
-//$row = mysql_fetch_assoc($result);
-//$sum = $row['value_sum'];     
 ?>
         <table id="gestion">
             <thead>

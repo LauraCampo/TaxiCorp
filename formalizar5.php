@@ -5,8 +5,8 @@
             //si se ha marcado la casilla se hace el update:
             //
             //conexion con la base de datos:
+            $conexion= mysqli_connect("127.0.0.1","root","localtestdeveloper","TaxiCorpLCB");
             
-            $conexion= mysqli_connect("localhost","cursoajax","123456","TaxiCorpLCB");
             //aqui hace el insert:
             $insert="INSERT INTO servicio VALUES (";
             $insert.= $_POST["Numero_servicio"].",";
@@ -19,11 +19,12 @@
             $insert.="'".$valor."'";
             $insert.=")";
             $exec1= mysqli_query($conexion, $insert);
+            
             if($exec1){
                 echo("<p>Carrera a&ntilde;adida para la matr&iacute;cula ".$valor."</p>"); 
             }
             else{
-                echo($insert."<br>");
+                //echo($insert."<br>");
                 echo("<p>Se ha producido un error al a&ntilde;adir la carrera.</p>");  
             }
             // aqui hace el update:
